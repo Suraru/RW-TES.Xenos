@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionImperial</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] County</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/ImperialFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementImperial</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] City</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/ImperialFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

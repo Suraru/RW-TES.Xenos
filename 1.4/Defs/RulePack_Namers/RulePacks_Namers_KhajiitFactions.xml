@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionKhajiitTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Clan</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/KhajiitFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementKhajiitTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList]rest</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/KhajiitMale</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionDunmerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] House</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/DunmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementDunmerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/DunmerMale</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

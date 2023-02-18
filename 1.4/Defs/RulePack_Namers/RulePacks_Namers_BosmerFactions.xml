@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionBosmerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Tribe</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/BosmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementBosmerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Camp</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/BosmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

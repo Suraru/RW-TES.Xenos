@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonImperialMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>MaleList->TESXenos_Names/ImperialMale</li>
+				<li>FamilyList->TESXenos_Names/ImperialFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonImperialFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FemaleList->TESXenos_Names/ImperialFemale</li>
+				<li>FamilyList->TESXenos_Names/ImperialFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

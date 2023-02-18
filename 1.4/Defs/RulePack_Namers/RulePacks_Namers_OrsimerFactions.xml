@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionOrsimerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Clan</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/OrsimerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementOrsimerTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Stronghold</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/OrsimerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

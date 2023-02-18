@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
+		<value>
+			<MorrowRim_AltmerXenotype>0.02</MorrowRim_AltmerXenotype>
+			<MorrowRim_DunmerXenotype>0.02</MorrowRim_DunmerXenotype>
+			<MorrowRim_BosmerXenotype>0.02</MorrowRim_BosmerXenotype>
+			<MorrowRim_OrsimerXenotype>0.02</MorrowRim_OrsimerXenotype>
+			<MorrowRim_BretonXenotype>0.04</MorrowRim_BretonXenotype>
+			<MorrowRim_ImperialXenotype>0.04</MorrowRim_ImperialXenotype>
+			<MorrowRim_NordXenotype>0.04</MorrowRim_NordXenotype>
+			<MorrowRim_RedguardXenotype>0.04</MorrowRim_RedguardXenotype>
+			<MorrowRim_ArgonianXenotype>0.01</MorrowRim_ArgonianXenotype>
+			<MorrowRim_KhajiitCathayXenotype>0.005</MorrowRim_KhajiitCathayXenotype>
+			<MorrowRim_KhajiitDagiXenotype>0.005</MorrowRim_KhajiitDagiXenotype>
+			<MorrowRim_KhajiitOhmesXenotype>0.005</MorrowRim_KhajiitOhmesXenotype>
+			<MorrowRim_KhajiitPahmarXenotype>0.005</MorrowRim_KhajiitPahmarXenotype>
+			<MorrowRim_KhajiitSuthayXenotype>0.005</MorrowRim_KhajiitSuthayXenotype>
+			<MorrowRim_KhajiitTojayXenotype>0.005</MorrowRim_KhajiitTojayXenotype>
+		</value>
+	</Operation>
+</Patch>

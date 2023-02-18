@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonKhajiitMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>MaleList->TESXenos_Names/KhajiitMale</li>
+				<li>FamilyList->TESXenos_Names/KhajiitFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerPersonKhajiitFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FemaleList->TESXenos_Names/KhajiitFemale</li>
+				<li>FamilyList->TESXenos_Names/KhajiitFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

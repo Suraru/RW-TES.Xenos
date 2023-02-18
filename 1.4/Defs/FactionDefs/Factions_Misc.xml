@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="TribeRoughBase">
+		<defName>MorrowRim_FactionDunmer</defName>
+		<label>Dunmer Tribe</label>
+		<description>A group of colonists from an ancient land called Morrowind, the home of the Dunmer.</description>
+		<colorSpectrum>
+		  <li>(0.93, 0.39, 0.32)</li>
+		  <li>(0.35, 0.90, 0.57)</li>
+		  <li>(0.25, 0.66, 0.94)</li>
+		  <li>(0.98, 0.75, 0.37)</li>
+		  <li>(0.97, 0.62, 0.52)</li>
+		</colorSpectrum>
+		<leaderTitle>Grandmaster</leaderTitle>
+		<factionNameMaker>MorrowRim_NamerFactionDunmerTribe</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementDunmerTribe</settlementNameMaker>
+		<pawnSingular>dunmer</pawnSingular>
+		<pawnsPlural>dunmeri</pawnsPlural>
+		<melaninRange>0~0.5</melaninRange>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_DunmerXenotype>999</MorrowRim_DunmerXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="VFEM_MedievalFactionBase">
+		<defName>MorrowRim_FactionAltmer</defName>
+		<label>Altmer Kingdom</label>
+		<description>A group of colonists from an ancient land called the Summerset Isles, the home of the Altmer.</description>
+		<colorSpectrum>
+		  <li>(0.85, 0.75, 0.37)</li>
+		  <li>(0.94, 0.61, 0.06)</li>
+		</colorSpectrum>
+		<factionNameMaker>MorrowRim_NamerFactionAltmer</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementAltmer</settlementNameMaker>
+		<pawnSingular>altmer</pawnSingular>
+		<pawnsPlural>altmeri</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_AltmerXenotype>999</MorrowRim_AltmerXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="TribeRoughBase">
+		<defName>MorrowRim_TribeFactionBosmer</defName>
+		<label>Bosmer Tribe</label>
+		<description>A group of colonists from an ancient land called Valenwood, the home of the Bosmer.</description>
+		<colorSpectrum>
+			<li>(0.65, 0.28, 0)</li>
+			<li>(0.61, 0.45, 0.32)</li>
+		</colorSpectrum>
+		<leaderTitle>Treethane</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
+		<requiredMemes>
+		  <li>Cannibal</li>
+		</requiredMemes>
+		<factionNameMaker>MorrowRim_NamerFactionBosmerTribe</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementBosmerTribe</settlementNameMaker>
+		<pawnSingular>bosmer</pawnSingular>
+		<pawnsPlural>bosmeri</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_BosmerXenotype>999</MorrowRim_BosmerXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="TribeRoughBase">
+		<defName>MorrowRim_TribeFactionOrsimer</defName>
+		<label>Orsimer Tribe</label>
+		<description>A group of colonists from an ancient land called Orsinium, the home of the Orcs.</description>
+		<leaderTitle>Chieften</leaderTitle>
+		<factionNameMaker>MorrowRim_NamerFactionOrsimerTribe</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementOrsimerTribe</settlementNameMaker>
+		<pawnSingular>orc</pawnSingular>
+		<pawnsPlural>orcs</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_OrsimerXenotype>999</MorrowRim_OrsimerXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="VFEM_MedievalFactionBase">
+		<defName>MorrowRim_FactionBreton</defName>
+		<label>Breton Kingdom</label>
+		<description>A group of colonists from an ancient land called High Rock, the home of the Bretons.</description>
+		<factionNameMaker>MorrowRim_NamerFactionBreton</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementBreton</settlementNameMaker>
+		<pawnSingular>breton</pawnSingular>
+		<pawnsPlural>bretons</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_BretonXenotype>899</MorrowRim_BretonXenotype>
+				<MorrowRim_ImperialXenotype>100</MorrowRim_ImperialXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="VFEM_MedievalFactionBase">
+		<defName>MorrowRim_FactionImperial</defName>
+		<label>Imperial Empire</label>
+		<description>A group of colonists from an ancient land called Cyrodiil, the home of the Imperials.</description>
+		<colorSpectrum>
+		  <li>(0.85, 0, 0)</li>
+		  <li>(0.85, 0.7, 0.7)</li>
+		</colorSpectrum>
+		<factionNameMaker>MorrowRim_NamerFactionImperial</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementImperial</settlementNameMaker>
+		<pawnSingular>imperial</pawnSingular>
+		<pawnsPlural>imperials</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_ImperialXenotype>899</MorrowRim_ImperialXenotype>
+				<MorrowRim_BretonXenotype>100</MorrowRim_BretonXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="VFEV_VikingBase">
+		<defName>MorrowRim_FactionNord</defName>
+		<label>Nordic Jarldom</label>
+		<description>A group of colonists from an ancient land called Skyrim, the home of the Nords.</description>
+		<colorSpectrum>
+		  <li>(0, 0.4, 0.94)</li>
+		  <li>(0.64, 0.8, 1)</li>
+		</colorSpectrum>
+		<leaderTitle>Jarl</leaderTitle>
+		<factionNameMaker>MorrowRim_NamerFactionNord</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementNord</settlementNameMaker>
+		<pawnSingular>nord</pawnSingular>
+		<pawnsPlural>nords</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_NordXenotype>999</MorrowRim_NordXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="VFEM_MedievalFactionBase">
+		<defName>MorrowRim_FactionRedguard</defName>
+		<label>Redguard Kingdom</label>
+		<description>A group of colonists from an ancient land called Hammerfell, the home of the Redguard.</description>
+		<colorSpectrum>
+		  <li>(0.76, 0.55, 0)</li>
+		  <li>(0.76, 0.66, 0.35)</li>
+		</colorSpectrum>
+		<factionNameMaker>MorrowRim_NamerFactionRedguard</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementRedguard</settlementNameMaker>
+		<pawnSingular>redguard</pawnSingular>
+		<pawnsPlural>redguards</pawnsPlural>
+		<melaninRange>0~0.5</melaninRange>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_RedguardXenotype>999</MorrowRim_RedguardXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="TribeRoughBase">
+		<defName>MorrowRim_TribeFactionArgonian</defName>
+		<label>Argonian Tribe</label>
+		<description>A group of colonists from an ancient land called Black Marsh, the home of the Argonians.</description>
+		<factionNameMaker>MorrowRim_NamerFactionArgonianTribe</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementArgonianTribe</settlementNameMaker>
+		<leaderTitle>Shaman</leaderTitle>
+		<pawnSingular>argonian</pawnSingular>
+		<pawnsPlural>argonians</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_ArgonianXenotype>999</MorrowRim_ArgonianXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+	
+	<FactionDef ParentName="TribeRoughBase">
+		<defName>MorrowRim_TribeFactionKhajiit</defName>
+		<label>Khajiit Tribe</label>
+		<description>A group of colonists from an ancient land called Elsweyr, the home of the Khajiit.</description>
+		<colorSpectrum>
+		  <li>(0.85, 0.75, 0.37)</li>
+		  <li>(0.94, 0.61, 0.06)</li>
+		</colorSpectrum>
+		<leaderTitle>Mane</leaderTitle>
+		<factionNameMaker>MorrowRim_NamerFactionKhajiitTribe</factionNameMaker>
+		<settlementNameMaker>MorrowRim_NamerSettlementKhajiitTribe</settlementNameMaker>
+		<pawnSingular>khajiit</pawnSingular>
+		<pawnsPlural>khajiit</pawnsPlural>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<MorrowRim_KhajiitCathayXenotype>300</MorrowRim_KhajiitCathayXenotype>
+				<MorrowRim_KhajiitDagiXenotype>100</MorrowRim_KhajiitDagiXenotype>
+				<MorrowRim_KhajiitOhmesXenotype>100</MorrowRim_KhajiitOhmesXenotype>
+				<MorrowRim_KhajiitPahmarXenotype>100</MorrowRim_KhajiitPahmarXenotype>
+				<MorrowRim_KhajiitSuthayXenotype>200</MorrowRim_KhajiitSuthayXenotype>
+				<MorrowRim_KhajiitTojayXenotype>100</MorrowRim_KhajiitTojayXenotype>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</FactionDef>
+</Defs>

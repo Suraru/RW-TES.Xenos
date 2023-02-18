@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionBreton</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Kingdom</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/BretonFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementBreton</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] City</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/BretonMale</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

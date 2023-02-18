@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RulePackDef>
+		<defName>MorrowRim_NamerFactionNord</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList] Hold</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/NordFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>MorrowRim_NamerSettlementNord</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[FamilyList]stead</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>FamilyList->TESXenos_Names/NordMale</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

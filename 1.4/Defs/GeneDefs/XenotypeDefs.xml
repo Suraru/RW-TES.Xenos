@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XenotypeDef>
+		<defName>MorrowRim_AltmerXenotype</defName>
+		<label>Altmer</label>
+		<description>The Altmer, or self-titled "Cultured People", are a tall, golden-skinned race, hailing from Summerset Isle. They are also known as High Elves by the denizens of Tamriel, or the more obscure term Salache, High Elves are generally viewed as being proud or snobbish. Altmer live two to three times as long as humans; with a 200-year-old Altmer being old and a 300-year-old Altmer being very, very old. Altmer consider themselves to be the most civilized culture of Tamriel; the common tongue of the continent is based on Altmer speech and writing, and most of the Empire's arts, crafts, laws, and sciences are derived from Altmer traditions.
+
+		The Altmer are the most strongly gifted in the arcane arts of all the races, and they are very resistant to diseases. However, they are also somewhat vulnerable to magicka, fire, frost, and shock, which makes them very weak against their strongest point - magic. They are among the longest living and most intelligent races of Tamriel, and they often become powerful magic users due to both their magical affinity and the many years they may devote to their studies.</description>
+		<descriptionShort>The Altmer, or self-titled "Cultured People", are a tall, golden-skinned race, hailing from Summerset Isle.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonAltmerMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonAltmerFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>AG_LargerBodySize</li>
+			<li>AG_SlowerAging</li>
+			<li>AG_InnatePsylink</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Turn_Gene_TraitGrandeur</li>
+			<li>FireWeakness</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Delicate</li>
+			<li>Libido_Low</li>
+			<li>AG_SlowGestation</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Pointed</li>
+			<li>Turn_Gene_HighBeautyStandard</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>FacialRidges</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Body_Thin</li>
+			<li>Skin_DeepYellow</li>
+			<li>Skin_PaleYellow</li>
+			<li>Hands_Human</li>
+			<li>AptitudeRemarkable_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_DunmerXenotype</defName>
+		<label>Dunmer</label>
+		<description>The Dunmer, also known as Dark Elves, or the archaic Moriche, are the grey-skinned, typically red-eyed elven peoples of Morrowind. In the Empire, "Dark Elf" is the common usage, but they and their Aldmeri brethren prefer the term "Dunmer". "Dark" is variously interpreted as meaning "dark-skinned", "gloomy", and "ill-favored by fate", with the Dunmer and their national identity embracing these various connotations with enthusiasm.
+		
+		Their combination of powerful intellects with strong and agile physiques produce superior warriors and sorcerers. On the battlefield, Dunmer are noted for their skill with a balanced integration of the sword, the bow and destruction magic. Dunmer live two to three times as long as humans; with a 200-year-old Dunmer being old and a 300-year-old Dunmer being very, very old. In character, they are grim, aloof, and reserved, as well as distrusting and disdainful of other races.
+
+		Dunmer distrust and are treated distrustfully by other races. They are often called proud, clannish, ruthless, and cruel, from an outsider's point of view, but greatly value loyalty and family. They also apparently have a reputation for quick tempers. Despite their powerful skills and strengths, the Dunmer's vengeful nature, age-old conflicts, betrayals, and ill-reputation prevent them from gaining more influence. Those born in their homeland of Morrowind are reputed to be considerably less friendly than those who grew up in the Imperial tradition.
+
+		Dark Elves are especially susceptible to skin diseases, which are collectively referred to as "corprus" (not to be confused with the Divine Disease), being named after the ancient Velothi word for "skin blight".</description>
+		<descriptionShort>The Dunmer, also known as Dark Elves, or the archaic Moriche, are the grey-skinned, typically red-eyed elven peoples of Morrowind.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonDunmerMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonDunmerFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>AG_SlowerAging</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Turn_Gene_TraitGrandeur</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>FireResistant</li>
+			<li>Delicate</li>
+			<li>AG_SlowGestation</li>
+			<li>AG_NoWings</li>
+			<li>AG_LongEars</li>
+			<li>Ears_Pointed</li>
+			<li>AG_UnsettlingAppearance</li>
+			<li>Eyes_Red</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>FacialRidges</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>AG_Skin_DeepBlue</li>
+			<li>AG_Skin_DeepPurple</li>
+			<li>Hands_Human</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_BosmerXenotype</defName>
+		<label>Bosmer</label>
+		<description>The Bosmer are the Elven clan-folk of Valenwood, a forested province in southwestern Tamriel. In the Empire, they are often referred to as Wood Elves, but Bosmer, Boiche, or the Tree-Sap people is what they call themselves. Bosmer rejected the stiff, formal traditions of Aldmeri high culture, preferring a more romantic, simple existence in harmony with the land and its wild beauty and creatures. They are relatively nimble and quick in body compared to their more "civilized" Altmeri cousins (who often look down upon the Bosmer as unruly and naive). Their agility makes them well-suited as scouts and thieves. However, they are also a quick-witted folk, and many pursue successful careers in scholarly pursuits or trading. Bosmer live two to three times as long as humans; with a 200-year-old Bosmer being old and a 300-year-old Bosmer being very, very old. Though they are considered less influential than some of their Elven brethren, the Bosmer are also relatively prone to producing offspring with 12 being considered average number of children in the family. As a result, they outnumber all other Mer on Tamriel.
+
+		The best archers in all of Tamriel, the Bosmer snatch and fire arrows in one continuous motion; they are even rumored to have invented the bow. They have many natural and unique abilities; notably, they can command simple-minded creatures and have a nearly chameleon-like ability to hide in forested areas. Many in the forests of Valenwood follow the tenets of the Green Pact. These "Green Pact Bosmer" are religiously carnivorous and cannibalistic, and do not harm the vegetation of Valenwood, though they are not averse to using wooden or plant-derived products created by others.</description>
+		<descriptionShort>The Bosmer are the Elven clan-folk of Valenwood, a forested province in southwestern Tamriel.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonBosmerMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonBosmerFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>AnimalWarcall</li>
+			<li>AG_SmallerBodySize</li>
+			<li>AG_SlowerAging</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>AG_LongEars</li>
+			<li>Ears_Pointed</li>
+			<li>AG_UnsettlingAppearance</li>
+			<li>Eyes_Gray</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Turn_Gene_HeadboneCrown</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>FacialRidges</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>AG_AntlerHorns</li>
+			<li>Headbone_MiniHorns</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Hands_Human</li>
+			<li>AptitudeRemarkable_Shooting</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudeTerrible_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_OrsimerXenotype</defName>
+		<label>Orsimer</label>
+		<description>Orcs, also called Orsimer or "Pariah Folk" in ancient times, are the elves of the Wrothgarian Mountains, Dragontail Mountains, Valenwood, Skyrim and Orsinium (literally translated as "Orc-Town"). They are noted for their unshakable courage in war and their unflinching endurance of hardships. Orcs have elven blood, but are usually considered to be both Beastfolk and Goblin-ken.
+
+		In the past, Orcs were widely feared and hated by the other nations and races of Tamriel and were seen as nothing more than uncivilized beasts, savage barbarians. The Orcs are as civilized as any of the other races, having worked hard to be seen as actual people. They have slowly won acceptance in the Empire, in particular for their distinguished service in the Emperor's Legions. Many Orcs in the Third Era have actually received an Imperial education as a benefit of serving the Imperial Legion. Orc armorers are prized for their craftsmanship, and Orc warriors in heavy armor are among the finest front-line troops in the Empire, and are fearsome when using their berserker rage.
+
+		Orcs have a lifespan similar to that of humans, possibly because according to the Nords, Shor passed a curse Orkey had placed on the Nords onto the Orcs. While many Imperial citizens regard Orc society as rough and cruel, the Orcs consider themselves to be stern, fair, and just. The Orcs of the Iliac Bay region have developed their own language, known as Orcish, and have often had their own kingdom, Orsinium.</description>
+		<descriptionShort>Orcs, also called Orsimer or "Pariah Folk" in ancient times, are the elves of the Wrothgarian Mountains, Dragontail Mountains, Valenwood, Skyrim and Orsinium (literally translated as "Orc-Town").</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonOrsimerMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonOrsimerFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>PsychicAbility_Enhanced</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Aggression_Aggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Human</li>
+			<li>AG_LongEars</li>
+			<li>Ears_Pig</li>
+			<li>Ears_Pointed</li>
+			<li>Beauty_VeryUgly</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Jaw_Heavy</li>
+			<li>Brow_Heavy</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_GutturalVoice</li>
+			<li>AG_GrowlingVoice</li>
+			<li>FacialRidges</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>AG_Tusks</li>
+			<li>Skin_Green</li>
+			<li>AG_Skin_DeepGreen</li>
+			<li>AG_Skin_PlantGreen</li>
+			<li>Hands_Human</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeStrong_Construction</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_BretonXenotype</defName>
+		<label>Breton</label>
+		<description>Bretons (from the Ehlnofex beratu meaning "half") are a race of both human and elven ancestry that inhabit High Rock. If Bretons are humans or elves is a topic of debate, with most people believing that they are the former. High Rock is fractious and divided politically, which is seemingly encouraged by the layout of the land itself. Warfare between kingdoms accounts for much of Breton history. Despite this, Bretons across the province share many facets of culture, including language, bardic traditions, and heroic tales. Bretons make up the peasantry, soldiery, and magical elite of the feudal kingdoms competing for power within High Rock. They are distantly related to the Reachfolk.
+
+		Bretondom originated from the Nedes of High Rock and Aldmer interbreeding for centuries as far back as the Merethic Era. The Bretons' Nedic ancestors are referred to as the Druids of Galen by retroactive nomenclature, while Clan Direnni are primarily credited as being their Aldmer ancestors. The earliest Bretons were referred to as Manmeri, Half-Elves, and possibly Chimera (from the Altmeri word for "change"), and were more elven in appearance. Although the terms are archaic, some modern Bretons embrace this heritage and still refer to themselves as Manmer and Half-Elves. Druidic spellcraft (which differs from the arcane) is said to be the first truly Breton creation. Modern druids believe Manmer should utilize their natural affinity to enhance or perfect nature, and to strive for a world perfected, reshaping it just as their god Y'ffre once did.
+
+		The Direnni left a significant mark on the Bretons. The race's obsession with nobility, status, and lineage can be traced back to their days as vassals of Clan Direnni Breton's natural affinity for the magical arts is often attributed to their elven blood. They are known for their intelligence and have a quick and perceptive grasp of spellcraft, enchantment, and alchemy. Even the humblest of Bretons can boast a high resistance to destructive and dominating magical energies. Some Bretons have notably cemented themselves among the greatest mages in history. Bretons, by and large, are pale-skinned and slight humans, less muscular than Nords and Redguards, and possess more defined features such as high cheekbones and pronounced brow ridges. Some even display pointed ears much like elves. The Bretons' elvish physical features have waned and become more human over time, but have not vanished.
+
+		What it means to be a Breton is considered an age-old quandary by their people. Some Bretons hold their elven heritage in high esteem, which may influence them to worship Phynaster, the patron deity and "teacher" of the Direnni. Others attempt to seek out the druidic roots of their Nedic ancestors and reconnect with nature. Some become knights, a profession that represents the traditional chivalric principles of Breton society, and the "quest-obsession" that has become a national identity for High Rock. Others may seek to honor an ancient Breton tradition by taking on the role of a court mage. There are some that do not wish to be limited to one aspect of Breton culture, and have made efforts to blend the things that define it to make a proper legacy for the race. For example, the spell-knight archetype encapsulates the Breton staples of knighthood and the arcane, while the druid-knight brings the druidic arts into the lifestyle of a knightly order.</description>
+		<descriptionShort>Bretons (from the Ehlnofex beratu meaning "half") are a race of both human and elven ancestry that inhabit High Rock.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonBretonMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonBretonFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>AG_SlowerAging</li>
+			<li>AG_InnatePsylink</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Human</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Hands_Human</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeStrong_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_ImperialXenotype</defName>
+		<label>Imperial</label>
+		<description>Also known as Cyrodils, Cyrodilics, Cyro-Nordics, and Imperial Cyrods, the well-educated and well-spoken Imperials are the natives of the civilized, cosmopolitan province of Cyrodiil. Imperials are also known for the discipline and training of their citizen armies, and their respect for the rule of law. Imperials have proved to be shrewd diplomats and traders, and these traits, along with their remarkable skill and training as infantry, have enabled them to colonize various other nations and create the Empire. Their hegemony has waxed and waned throughout the eras, and most historians refer to three distinct Empires, the ends of which each mark a new epoch in Tamrielic history.</description>
+		<descriptionShort>Also known as Cyrodils, Cyrodilics, Cyro-Nordics, and Imperial Cyrods, the well-educated and well-spoken Imperials are the natives of the civilized, cosmopolitan province of Cyrodiil.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonImperialMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonImperialFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Slow</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Human</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Hands_Human</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeRemarkable_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_NordXenotype</defName>
+		<label>Nord</label>
+		<description>Nords (called Bron singular in the Language of Dragons) are the Children of the Sky, a race of tall and fair-haired humans from Skyrim who are known for their incredible resistance to cold and magical frost. They are fierce, strong and enthusiastic warriors, and many become renowned warriors, soldiers and mercenaries all over Tamriel. Eager to augment their martial skills beyond the traditional methods of Skyrim, they excel in all manner of warfare, and are known as a militant people by their neighbors. Nords were known for a time for their nautical prowess when they migrated from Atmora. Seafaring merchants or smugglers are not unheard of, as was the case with Tobias.</description>
+		<descriptionShort>Nords (called Bron singular in the Language of Dragons) are the Children of the Sky, a race of tall and fair-haired humans from Skyrim who are known for their incredible resistance to cold and magical frost.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonNordMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonNordFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>AG_LargerBodySize</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Human</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Hands_Human</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_RedguardXenotype</defName>
+		<label>Redguard</label>
+		<description>Redguards are the most naturally talented warriors in Tamriel. The dark-skinned, coarse-haired people of Hammerfell seem born to battle, though their pride and fierce independence of spirit makes them more suitable as scouts or skirmishers, or as free-ranging heroes and adventurers, than as rank-and-file soldiers. In addition to their cultural affinities for many armor styles and weapons (particularly swords), Redguards are also physically blessed with hardy constitutions, resistance to poison, and quickness of foot. Unlike most other human races, they are not believed to have any connection with the ancestral Nordic homeland of Atmora.</description>
+		<descriptionShort>The Altmer, or self-titled "Cultured People", are a tall, golden-skinned race, hailing from Summerset Isle.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonRedguardMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonRedguardFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>PsychicAbility_Deaf</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Human</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>Hands_Human</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudePoor_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_ArgonianXenotype</defName>
+		<label>Argonian</label>
+		<description>Argonians (Saxhleel, or People of the Root in their native language of Jel) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. The other races often refer to them as "lizards" or the "Lizard Folk" instead, especially when meaning to be derogatory. They are known as the foremost experts in guerrilla warfare throughout Tamriel, a reputation brought upon them by defending their borders from enemies for countless centuries. They have a connection to the Hist, a race of sentient trees.
+
+		Agile and cunning, they possess natural immunity to poison and disease, a trait that serves them well in their treacherous homeland. Argonians are swift swimmers and can breathe underwater. They are also naturally adept spellcasters and excel in the art of stealth.
+		
+		Foreign racial categorization labels them as "beasts", or "Betmeri", as opposed to the humanoid races of Mer and Men. The Argonians' alien nature is often commented on; they are called strange, expressionless, reserved peoples, slow to trust and hard to know. This is a sentiment shared even by lukiul, or "assimilated" Argonians, who were raised far away from the Hist and often have significant trouble fully understanding the emotions, body language, or motivations of their estranged brethren.
+
+		While most of Tamriel refers to them as the "Argonians", many Argonians prefer the term "Saxhleel" when referring to their kind; "Argonian" is an Imperial term. Some Argonians opt to take on a more Cyrodiilicized name outside of Black Marsh. Taking on Imperial dress, name, and customs makes things easier for Argonians in Cyrodiil.
+
+		According to the First Era Scholar Brendan the Persistent, "The Argonian people have, throughout Tamrielic history, been perhaps the most misunderstood, vilified, and reviled of all the sentient races. Yet, those who have taken the time to experience Argonian culture have gained a greater appreciation for this noble and beautiful people."</description>
+		<descriptionShort>Argonians (Saxhleel, or People of the Root in their native language of Jel) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. </descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonArgonianMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonArgonianFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMy_DraconicTail</li>
+			<li>BTEMy_DraconicNose</li>
+			<li>BTE_FeralMight</li>
+			<li>Immunity_SuperStrong</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Turn_Gene_GauranlenNeed</li>
+			<li>MoveSpeed_Quick</li>
+			<li>ToxResist_Partial</li>
+			<li>Delicate</li>
+			<li>AG_EggLaying</li>
+			<li>AG_UnsettlingAppearance</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Turn_Gene_HeadboneCrown</li>
+			<li>AG_GutturalVoice</li>
+			<li>AG_GrowlingVoice</li>
+			<li>FacialRidges</li>
+			<li>Headbone_MiniHorns</li>
+			<li>AG_ScalyBody</li>
+			<li>AG_Digitigrade</li>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Body_Hulk</li>
+			<li>Skin_Green</li>
+			<li>Skin_DeepYellow</li>
+			<li>Skin_PaleYellow</li>
+			<li>Skin_Orange</li>
+			<li>Turn_Gene_SkinBrightOrange</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_PaleRed</li>
+			<li>Skin_Purple</li>
+			<li>Skin_Blue</li>
+			<li>Skin_SheerWhite</li>
+			<li>Skin_LightGray</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>AG_Skin_DeepGreen</li>
+			<li>AG_Skin_PlantGreen</li>
+			<li>AG_Skin_DeepBlue</li>
+			<li>AG_Skin_DeeperRed</li>
+			<li>AG_Skin_DeepPurple</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeTerrible_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitCathayXenotype</defName>
+		<label>Khajiit - Cathay</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Cathay are slightly larger and stronger than Suthay-raht, but the most obvious difference is that they have plantigrade legs.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Cathay are slightly larger and stronger than Suthay-raht, but the most obvious difference is that they have plantigrade legs. </descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_NoseShort</li>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>VoiceRoar</li>
+			<li>AG_GrowlingVoice</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>Furskin</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitDagiXenotype</defName>
+		<label>Khajiit - Dagi</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Dagi are a less common form of the Khajiit, living in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest. Physically, they have facial features that are comparable to that of lynxes and are short in stature, making them among the smallest of the furstocks. Due to their light weight, they have been reported as being able to dwell in higher branches of trees that cannot hold a Bosmer. Due to their inclination to climb trees, they are compared to monkeys, though this is considered insulting. However, some folklore claims that a mummified Dagi paw can grant wishes at a price, mirroring the stories of Monkey paws among the Bosmer. According to possibly unreliable reports from the Bosmer, Dagi are suspected to be skilled spellcasters.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Dagi are a less common form of the Khajiit, living in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_NoseShort</li>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>AG_SmallerBodySize</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>VoiceRoar</li>
+			<li>AG_GrowlingVoice</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>Furskin</li>
+			<li>AptitudeTerrible_Melee</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitOhmesXenotype</defName>
+		<label>Khajiit - Ohmes</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Ohmes have been described as man-like and man-faced. Their features are distinctly Elven in appearance. They resemble Bosmer, though they are sometimes shorter. To avoid being mistaken as such, many Ohmes tattoo or paint their faces to resemble a feline aspect. The Imperial Geographical Society previously claimed them to be the most common kind of Khajiit to be encountered outside of Elsweyr, usually as adventurers or diplomats, though they are in fact seen far less often than other furstocks. Like Ohmes, they can easily be mistaken as elves or men. Just as men, they also walk on their heels. In contrast to men and mer, the body of an Ohmes-raht is covered by light fur, and they do have a tail. As Ohmes, they also paint their faces to resemble a feline-aspect. The spirit Boethra has been depicted as distinct from any known furstock, but displays some similarity to the Ohmes-raht.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Ohmes have been described as man-like and man-faced.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Ears_Human</li>
+			<li>Ears_Pointed</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>AptitudeStrong_Social</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitPahmarXenotype</defName>
+		<label>Khajiit - Pahmar</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Pahmar are a giant bipedal furstock that are similar to their bigger counterparts, the Pahmar-raht, and resemble Senche-Tigers. The Pahmar-raht are a giant bipedal furstock. Due to them being the strongest of furstocks, they are usually deployed as bodyguards and warriors. Like the Pahmar furstock, they resemble Senche-Tigers, but Pahmar-raht differ in that they are larger and more dangerous. They have plantigrade legs and are very tall.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Pahmar are a giant bipedal furstock that are similar to their bigger counterparts, the Pahmar-raht, and resemble Senche-Tigers.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_NoseShort</li>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>AG_LargerBodySize</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>VoiceRoar</li>
+			<li>AG_GrowlingVoice</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>Furskin</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitSuthayXenotype</defName>
+		<label>Khajiit - Suthay</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Suthay are similar to the Suthay-raht, save that they are of lesser stature. Like Suthay-raht, they are evidently bipedal and have digitigrade legs. The Suthay-raht are sometimes, incomprehensibly for Khajiit themselves, nicknamed "ja'khajiit". They are similar in height and build to the races of man, but like Suthay, they have digitigrade legs. They are completely covered in fur of different colors and patterns and have a tail. Claws are present on hands and feet, and their heads appear very cat-like. Suthay-raht are known to be good jumpers, agile, sneaky and having a bold spirit. This makes them good adventurers and traders. They are however not as good warriors as Cathay-raht. Suthay-raht are able to purr and hiss. They also have slight phallic barbs. The Suthay-raht furstock was the most common in Morrowind, specifically on Vvardenfell, towards the end of the Third Era.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Suthay are similar in height and build to the races of man, but they have digitigrade legs.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_NoseShort</li>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>VoiceRoar</li>
+			<li>AG_GrowlingVoice</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>AG_Digitigrade</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>Furskin</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>MorrowRim_KhajiitTojayXenotype</defName>
+		<label>Khajiit - Tojay</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors.
+
+		Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.
+		
+		Little is known of the Tojay, except that they live in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest. Little is known of the Tojay-raht, except that they evidently are bipedal and have digitigrade legs.</description>
+		<descriptionShort>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. Little is known of the Tojay, except that they live in the southern marshes and jungle regions of Elsweyr, as well as the Tenmar Forest.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>1.1</combatPowerFactor>
+		<nameMaker>MorrowRim_NamerPersonKhajiitMale</nameMaker>
+		<nameMakerFemale>MorrowRim_NamerPersonKhajiitFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>BTEMa_NoseShort</li>
+			<li>BTEMa_TailElephant</li>
+			<li>BTE_FeralMight</li>
+			<li>AG_SmallerBodySize</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Quick</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>AG_NoWings</li>
+			<li>Ears_Cat</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>VoiceRoar</li>
+			<li>AG_GrowlingVoice</li>
+			<li>AG_NoTusks</li>
+			<li>AG_NoAntennae</li>
+			<li>AG_NoLowerAntennae</li>
+			<li>AG_Digitigrade</li>
+			<li>DarkVision</li>
+			<li>Hands_Human</li>
+			<li>Furskin</li>
+			<li>AptitudePoor_Melee</li>
+		</genes>
+	</XenotypeDef>
+</Defs>
