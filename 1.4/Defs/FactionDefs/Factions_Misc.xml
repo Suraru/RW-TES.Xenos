@@ -1,31 +1,424 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<FactionDef ParentName="TribeRoughBase">
+
+<!-- ///////////////////////////// -->
+<!-- ///Modified Faction Bases//// --> 
+<!-- ///////////////////////////// -->
+
+	<FactionDef ParentName="FactionBase" Name="TESTribeBase" Abstract="True">
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<categoryTag>Tribal</categoryTag>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+		<techLevel>Neolithic</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<structureMemeWeights>
+		  <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+		  <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+		  <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+		  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		  <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+		  <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+		  <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+		  <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<leaderTitle>chief</leaderTitle>
+		<caravanTraderKinds>
+		  <li>Caravan_Neolithic_BulkGoods</li>
+		  <li>Caravan_Neolithic_WarMerchant</li>
+		  <li>Caravan_Neolithic_Slaver</li>
+		  <li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+		  <li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+		  <li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidCommonalityFromPointsCurve>
+		  <points>
+			<li>(0, 1)</li> <!--Constant 1 at all points levels-->
+		  </points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(800, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+		  <li>
+			<!-- Normal fights, ranged with melee mix-ins -->
+			<kindDef>Combat</kindDef>
+			<commonality>100</commonality>
+			<options>
+			  <Tribal_Penitent>5</Tribal_Penitent>
+			  <Tribal_Warrior>5</Tribal_Warrior>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_Berserker>5</Tribal_Berserker>
+			  <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+			  <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+			</options>
+		  </li>
+		  <li>
+			<!-- Normal fights, ranged only -->
+			<kindDef>Combat</kindDef>
+			<commonality>60</commonality>
+			<options>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_ChiefRanged>5</Tribal_ChiefRanged>
+			</options>
+		  </li>
+		  <li>
+			<!-- Normal fights, melee only -->
+			<kindDef>Combat</kindDef>
+			<commonality>60</commonality>
+			<options>
+			  <Tribal_Penitent>10</Tribal_Penitent>
+			  <Tribal_Warrior>10</Tribal_Warrior>
+			  <Tribal_Berserker>10</Tribal_Berserker>
+			  <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+		  </options>
+		  </li>
+		  <li>
+			<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+			<kindDef>Combat</kindDef>
+			<commonality>5</commonality>
+			<options>
+			  <Tribal_Breacher>5</Tribal_Breacher>
+			  <Tribal_Penitent>5</Tribal_Penitent>
+			  <Tribal_Warrior>5</Tribal_Warrior>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_Berserker>5</Tribal_Berserker>
+			  <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+			  <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+		  </options>
+		  </li>
+		  <li>
+			<!-- Peaceful -->
+			<kindDef>Peaceful</kindDef>
+			<options>
+			  <Tribal_Warrior>20</Tribal_Warrior>
+			  <Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Tribal_Child>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_Berserker>5</Tribal_Berserker>
+			  <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+			  <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Trader</kindDef>
+			<traders>
+			  <Tribal_Trader>1</Tribal_Trader>
+			</traders>
+			<carriers>
+			  <Muffalo>6</Muffalo>
+			  <Dromedary>5</Dromedary>
+			  <Alpaca>2.5</Alpaca>
+			  <Elephant>2</Elephant>
+			</carriers>
+			<guards>
+			  <Tribal_Warrior>7</Tribal_Warrior>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_Berserker>7</Tribal_Berserker>
+			</guards>
+		  </li>
+		  <li>
+			<kindDef>Settlement</kindDef>
+			<options>
+			  <Tribal_Warrior>7</Tribal_Warrior>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_Berserker>7</Tribal_Berserker>
+			  <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Settlement_RangedOnly</kindDef>
+			<options>
+			  <Tribal_Archer>10</Tribal_Archer>
+			  <Tribal_Hunter>10</Tribal_Hunter>
+			  <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+			  <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Tribal_Miner>1</Tribal_Miner>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Tribal_Hunter>1</Tribal_Hunter>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Tribal_Logger>1</Tribal_Logger>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Tribal_Farmer>1</Tribal_Farmer>
+			</options>
+		  </li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	</FactionDef>
+
+    <FactionDef ParentName="FactionBase" Name="TESFactionBase" Abstract="True">
+		<pawnSingular>outlander</pawnSingular>
+		<pawnsPlural>outlanders</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>prime councilor</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+		  <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+		  <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+		  <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+		  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		  <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+		  <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+		  <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+		  <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+			<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+			<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+			<commonality>0.95</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+			<commonality>0.05</commonality>
+		  </li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+		  <li>Caravan_Outlander_BulkGoods</li>
+		  <li>Caravan_Outlander_CombatSupplier</li>
+		  <li>Caravan_Outlander_Exotic</li>
+		  <li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+		  <li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+		  <li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(700, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+		  <li>
+			<!-- Normal fights, standard mix -->
+			<kindDef>Combat</kindDef>
+			<options>
+			  <Villager>5</Villager>
+			  <Town_Guard>10</Town_Guard>
+			  <Grenadier_Destructive>1.5</Grenadier_Destructive>
+			  <Mercenary_Slasher>7</Mercenary_Slasher>
+			  <Mercenary_Gunner>10</Mercenary_Gunner>
+			  <Mercenary_Elite>10</Mercenary_Elite>
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+			  <Villager>20</Villager>
+			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+			  <Town_Guard>10</Town_Guard>
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Trader</kindDef>
+			<traders>
+			  <Town_Trader>1</Town_Trader>
+			</traders>
+			<carriers>
+			  <Muffalo>6</Muffalo>
+			  <Dromedary>5</Dromedary>
+			  <Alpaca>2</Alpaca>
+			  <Elephant>1</Elephant>
+			</carriers>
+			<guards>
+			  <Villager>3</Villager>
+			  <Town_Guard>10</Town_Guard>
+			  <Grenadier_Destructive>1.5</Grenadier_Destructive>
+			  <Mercenary_Slasher>7</Mercenary_Slasher>
+			  <Mercenary_Gunner>10</Mercenary_Gunner>
+			  <Mercenary_Elite>10</Mercenary_Elite>
+			</guards>
+		  </li>
+		  <li>
+			<kindDef>Settlement</kindDef>
+			<options>
+			  <Villager>10</Villager>
+			  <Town_Guard>10</Town_Guard>
+			  <Grenadier_Destructive>1.5</Grenadier_Destructive>
+			  <Mercenary_Slasher>7</Mercenary_Slasher>
+			  <Mercenary_Gunner>10</Mercenary_Gunner>
+			  <Mercenary_Elite>10</Mercenary_Elite>
+			  <Town_Councilman>10</Town_Councilman>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Miner>1</Miner>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Hunter>1</Hunter>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Logger>1</Logger>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Farmer>1</Farmer>
+			</options>
+		  </li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+
+<!-- ///////////////////////////// -->
+<!-- /////////Factions//////////// --> 
+<!-- ///////////////////////////// -->
+
+<!-- ///////////Dunmer//////////// -->
+
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionDunmer</defName>
 		<label>Dunmer Tribe</label>
 		<description>A group of colonists from an ancient land called Morrowind, the home of the Dunmer.</description>
 		<colorSpectrum>
-		  <li>(0.93, 0.39, 0.32)</li>
-		  <li>(0.35, 0.90, 0.57)</li>
-		  <li>(0.25, 0.66, 0.94)</li>
-		  <li>(0.98, 0.75, 0.37)</li>
-		  <li>(0.97, 0.62, 0.52)</li>
+		  <li>(0.25, 0.0, 0.5)</li>
+		  <li>(0.75, 0.3, 0.9)</li>
 		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/Dunmer</factionIconPath>
 		<leaderTitle>Grandmaster</leaderTitle>
 		<factionNameMaker>MorrowRim_NamerFactionDunmerTribe</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementDunmerTribe</settlementNameMaker>
 		<pawnSingular>dunmer</pawnSingular>
 		<pawnsPlural>dunmeri</pawnsPlural>
-		<melaninRange>0~0.5</melaninRange>
+		<melaninRange>0.9~1</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_DunmerXenotype>999</MorrowRim_DunmerXenotype>
+				<MorrowRim_DunmerXenotype>0.95</MorrowRim_DunmerXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_OriginHindu</li>
+			<li>PainIsVirtue</li>
+			<li>Proselytizer</li>
+			<li>VME_Bushido</li>
+		</requiredMemes>
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+		<minSettlementTemperatureChanceCurve> <!-- Dunmer setllements should try to appear in warm temperatures -->
+		  <points>
+			<li>(17.9,  0.00001)</li>
+			<li>(18,    1)</li>
+			<li>(24,    1)</li>
+		  </points>
+		</minSettlementTemperatureChanceCurve>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<naturalEnemy>true</naturalEnemy>
 	</FactionDef>
-	
-	<FactionDef ParentName="VFEM_MedievalFactionBase">
+
+<!-- ///////////Altmer//////////// -->
+
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionAltmer</defName>
 		<label>Altmer Kingdom</label>
 		<description>A group of colonists from an ancient land called the Summerset Isles, the home of the Altmer.</description>
@@ -33,78 +426,202 @@
 		  <li>(0.85, 0.75, 0.37)</li>
 		  <li>(0.94, 0.61, 0.06)</li>
 		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/Altmer</factionIconPath>
+		<leaderTitle>Kinlord</leaderTitle>
 		<factionNameMaker>MorrowRim_NamerFactionAltmer</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementAltmer</settlementNameMaker>
 		<pawnSingular>altmer</pawnSingular>
 		<pawnsPlural>altmeri</pawnsPlural>
+		<melaninRange>0~0.1</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_AltmerXenotype>999</MorrowRim_AltmerXenotype>
+				<MorrowRim_AltmerXenotype>0.95</MorrowRim_AltmerXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>Supremacist</li>
+			<li>VME_PsychicFocus</li>
+			<li>VME_Astrology</li>
+			<li>VME_Bushido</li>
+		</requiredMemes>
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
 	
-	<FactionDef ParentName="TribeRoughBase">
+<!-- ///////////Bosmer//////////// -->
+
+	<FactionDef ParentName="TESTribeBase">
 		<defName>MorrowRim_TribeFactionBosmer</defName>
 		<label>Bosmer Tribe</label>
 		<description>A group of colonists from an ancient land called Valenwood, the home of the Bosmer.</description>
 		<colorSpectrum>
-			<li>(0.65, 0.28, 0)</li>
-			<li>(0.61, 0.45, 0.32)</li>
+		  <li>(0.0, 0.85, 0.0</li>
+		  <li>(0.5, 0.95, 0.5)</li>
 		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/Bosmer</factionIconPath>
 		<leaderTitle>Treethane</leaderTitle>
-		<factionIconPath>World/WorldObjects/Expanding/CannibalTribe</factionIconPath>
-		<requiredMemes>
-		  <li>Cannibal</li>
-		</requiredMemes>
 		<factionNameMaker>MorrowRim_NamerFactionBosmerTribe</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementBosmerTribe</settlementNameMaker>
 		<pawnSingular>bosmer</pawnSingular>
 		<pawnsPlural>bosmeri</pawnsPlural>
+		<melaninRange>0.1~0.5</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_BosmerXenotype>999</MorrowRim_BosmerXenotype>
+				<MorrowRim_BosmerXenotype>0.95</MorrowRim_BosmerXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>Cannibal</li>
+			<li>Rancher</li>
+			<li>TreeConnection</li>
+			<li>NaturePrimacy</li>
+		</requiredMemes>
+		<allowedCultures><li>Kriminul</li></allowedCultures>
+		<techLevel>Neolithic</techLevel>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+			<li>Plasteel</li>
+			<li>Leather_Plain</li>
+			<li>Leather_Dog</li>
+			<li>Leather_Wolf</li>
+			<li>Leather_Panthera</li>
+			<li>Leather_Camel</li>
+			<li>Leather_Bluefur</li>
+			<li>Leather_Bear</li>
+			<li>Leather_GuineaPig</li>
+			<li>Leather_Human</li>
+			<li>Leather_Pig</li>
+			<li>Leather_Light</li>
+			<li>Leather_Bird</li>
+			<li>Leather_Chinchilla</li>
+			<li>Leather_Fox</li>
+			<li>Leather_Lizard</li>
+			<li>Leather_Elephant</li>
+			<li>Leather_Heavy</li>
+			<li>Leather_Rhinoceros</li>
+			<li>Leather_Thrumbo</li>
+			<li>Leather_Patch</li>
+			<li>WoolSheep</li>
+			<li>WoolAlpaca</li>
+			<li>WoolMegasloth</li>
+			<li>WoolMuffalo</li>
+			<li>WoolBison</li>
+			<li MayRequire="sihv.rombones">>BoneItem</li>
+			<li MayRequire="sihv.rombones">BoneChina</li>
+			<li MayRequire="sihv.rombones">BonePlastic</li>
+			<li MayRequire="sihv.rombones">Bonecrete</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<naturalEnemy>true</naturalEnemy>
 	</FactionDef>
-	
-	<FactionDef ParentName="TribeRoughBase">
+
+<!-- ///////////Orsimer//////////// -->
+
+	<FactionDef ParentName="TESTribeBase">
 		<defName>MorrowRim_TribeFactionOrsimer</defName>
-		<label>Orsimer Tribe</label>
+		<label>Orsimer Clan</label>
 		<description>A group of colonists from an ancient land called Orsinium, the home of the Orcs.</description>
+		<colorSpectrum>
+		  <li>(0.2, 0.85, 0.2</li>
+		  <li>(0.5, 0.95, 0.5)</li>
+		</colorSpectrum>
 		<leaderTitle>Chieften</leaderTitle>
 		<factionNameMaker>MorrowRim_NamerFactionOrsimerTribe</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementOrsimerTribe</settlementNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/Orsimer</factionIconPath>
 		<pawnSingular>orc</pawnSingular>
 		<pawnsPlural>orcs</pawnsPlural>
+		<melaninRange>0.4~0.9</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_OrsimerXenotype>999</MorrowRim_OrsimerXenotype>
+				<MorrowRim_OrsimerXenotype>0.95</MorrowRim_OrsimerXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>Raider</li>
+			<li>VME_HardcoreIndustrialism</li>
+			<li>VME_BloodCourt</li>
+			<li>VME_Nationalist</li>
+		</requiredMemes>
+		<allowedCultures><li>Kriminul</li></allowedCultures>
+		<techLevel>Neolithic</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<naturalEnemy>true</naturalEnemy>
 	</FactionDef>
+
+<!-- ///////////Breton//////////// -->
 	
-	<FactionDef ParentName="VFEM_MedievalFactionBase">
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionBreton</defName>
 		<label>Breton Kingdom</label>
 		<description>A group of colonists from an ancient land called High Rock, the home of the Bretons.</description>
+		<colorSpectrum>
+		  <li>(0.0, 0.0, 0.65</li>
+		  <li>(0.5, 0.25, 0.95)</li>
+		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/Breton</factionIconPath>
+		<leaderTitle>Count</leaderTitle>
 		<factionNameMaker>MorrowRim_NamerFactionBreton</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementBreton</settlementNameMaker>
 		<pawnSingular>breton</pawnSingular>
 		<pawnsPlural>bretons</pawnsPlural>
+		<melaninRange>0.25~0.5</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_BretonXenotype>899</MorrowRim_BretonXenotype>
-				<MorrowRim_ImperialXenotype>100</MorrowRim_ImperialXenotype>
+				<MorrowRim_BretonXenotype>0.85</MorrowRim_BretonXenotype>
+				<MorrowRim_ImperialXenotype>0.10</MorrowRim_ImperialXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>VME_Astrology</li>
+			<li>VME_Egalitarian</li>
+			<li>VME_CityBuilders</li>
+			<li>VME_Healthcare</li>
+		</requiredMemes>
+		<allowedCultures><li>Sophian</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
-	
-	<FactionDef ParentName="VFEM_MedievalFactionBase">
+
+<!-- ///////////Imperials//////////// -->	
+
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionImperial</defName>
 		<label>Imperial Empire</label>
 		<description>A group of colonists from an ancient land called Cyrodiil, the home of the Imperials.</description>
@@ -112,41 +629,92 @@
 		  <li>(0.85, 0, 0)</li>
 		  <li>(0.85, 0.7, 0.7)</li>
 		</colorSpectrum>
+		<factionIconPath>World/WorldObjects/Expanding/Imperial</factionIconPath>
 		<factionNameMaker>MorrowRim_NamerFactionImperial</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementImperial</settlementNameMaker>
+		<leaderTitle>Count</leaderTitle>
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
+		<melaninRange>0.25~0.75</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_ImperialXenotype>899</MorrowRim_ImperialXenotype>
-				<MorrowRim_BretonXenotype>100</MorrowRim_BretonXenotype>
+				<MorrowRim_ImperialXenotype>0.50</MorrowRim_ImperialXenotype>
+				<MorrowRim_BretonXenotype>0.1</MorrowRim_BretonXenotype>
+				<MorrowRim_NordXenotype>0.1</MorrowRim_NordXenotype>
+				<MorrowRim_RedguardXenotype>0.1</MorrowRim_RedguardXenotype>
+				<MorrowRim_OrsimerXenotype>0.02</MorrowRim_OrsimerXenotype>
+				<MorrowRim_BosmerXenotype>0.02</MorrowRim_BosmerXenotype>
+				<MorrowRim_DunmerXenotype>0.02</MorrowRim_DunmerXenotype>
+				<MorrowRim_AltmerXenotype>0.02</MorrowRim_AltmerXenotype>
+				<MorrowRim_ArgonianXenotype>0.02</MorrowRim_ArgonianXenotype>
+				<MorrowRim_KhajiitCathayXenotype>0.01</MorrowRim_KhajiitCathayXenotype>
+				<MorrowRim_KhajiitOhmesXenotype>0.01</MorrowRim_KhajiitOhmesXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>VME_Astrology</li>
+			<li>VME_Egalitarian</li>
+			<li>VME_CityBuilders</li>
+			<li>VME_Healthcare</li>
+		</requiredMemes>
+		<allowedCultures><li>Sophian</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>18~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
-	
-	<FactionDef ParentName="VFEV_VikingBase">
+
+<!-- ///////////Nords//////////// -->
+
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionNord</defName>
 		<label>Nordic Jarldom</label>
 		<description>A group of colonists from an ancient land called Skyrim, the home of the Nords.</description>
 		<colorSpectrum>
-		  <li>(0, 0.4, 0.94)</li>
-		  <li>(0.64, 0.8, 1)</li>
+		  <li>(0.0, 0.0, 0.55</li>
+		  <li>(0.5, 0.25, 0.95)</li>
 		</colorSpectrum>
-		<leaderTitle>Jarl</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Nord</factionIconPath>
 		<factionNameMaker>MorrowRim_NamerFactionNord</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementNord</settlementNameMaker>
+		<leaderTitle>Jarl</leaderTitle>
 		<pawnSingular>nord</pawnSingular>
 		<pawnsPlural>nords</pawnsPlural>
+		<melaninRange>0~0.25</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_NordXenotype>999</MorrowRim_NordXenotype>
+				<MorrowRim_NordXenotype>0.95</MorrowRim_NordXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>VME_Astrology</li>
+			<li>VME_Egalitarian</li>
+			<li>VME_CityBuilders</li>
+			<li>VME_Healthcare</li>
+		</requiredMemes>
+		<allowedCultures><li>Sophian</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>-40~18</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<naturalEnemy>true</naturalEnemy>
 	</FactionDef>
-	
-	<FactionDef ParentName="VFEM_MedievalFactionBase">
+
+<!-- ///////////Redguard//////////// -->
+
+	<FactionDef ParentName="TESFactionBase">
 		<defName>MorrowRim_FactionRedguard</defName>
 		<label>Redguard Kingdom</label>
 		<description>A group of colonists from an ancient land called Hammerfell, the home of the Redguard.</description>
@@ -156,35 +724,78 @@
 		</colorSpectrum>
 		<factionNameMaker>MorrowRim_NamerFactionRedguard</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementRedguard</settlementNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/Redguard</factionIconPath>
 		<pawnSingular>redguard</pawnSingular>
 		<pawnsPlural>redguards</pawnsPlural>
-		<melaninRange>0~0.5</melaninRange>
+		<leaderTitle>Count</leaderTitle>
+		<melaninRange>0.5~1</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_RedguardXenotype>999</MorrowRim_RedguardXenotype>
+				<MorrowRim_RedguardXenotype>0.95</MorrowRim_RedguardXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistAbstract</li>
+			<li>VME_Astrology</li>
+			<li>VME_Egalitarian</li>
+			<li>VME_CityBuilders</li>
+			<li>VME_Healthcare</li>
+		</requiredMemes>
+		<allowedCultures><li>Sophian</li></allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>45~100</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
-	
-	<FactionDef ParentName="TribeRoughBase">
+
+<!-- ///////////Argonian//////////// -->
+
+	<FactionDef ParentName="TESTribeBase">
 		<defName>MorrowRim_TribeFactionArgonian</defName>
 		<label>Argonian Tribe</label>
 		<description>A group of colonists from an ancient land called Black Marsh, the home of the Argonians.</description>
+		<colorSpectrum>
+		  <li>(0.0, 0.55, 0.0</li>
+		  <li>(0.5, 0.95, 0.5)</li>
+		</colorSpectrum>
 		<factionNameMaker>MorrowRim_NamerFactionArgonianTribe</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementArgonianTribe</settlementNameMaker>
-		<leaderTitle>Shaman</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Argonian</factionIconPath>
+		<leaderTitle>Tree-Minder</leaderTitle>
 		<pawnSingular>argonian</pawnSingular>
 		<pawnsPlural>argonians</pawnsPlural>
+		<melaninRange>0~1</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_ArgonianXenotype>999</MorrowRim_ArgonianXenotype>
+				<MorrowRim_ArgonianXenotype>1</MorrowRim_ArgonianXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_TheistEmbodied</li>
+			<li>Loyalist</li>
+			<li>TreeConnection</li>
+			<li>VME_Gestalt</li>
+		</requiredMemes>
+		<allowedCultures><li>Kriminul</li></allowedCultures>
+		<techLevel>Neolithic</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
-	
-	<FactionDef ParentName="TribeRoughBase">
+
+<!-- ///////////Khajiit (best race in TES)//////////// -->
+
+	<FactionDef ParentName="TESTribeBase">
 		<defName>MorrowRim_TribeFactionKhajiit</defName>
 		<label>Khajiit Tribe</label>
 		<description>A group of colonists from an ancient land called Elsweyr, the home of the Khajiit.</description>
@@ -195,18 +806,37 @@
 		<leaderTitle>Mane</leaderTitle>
 		<factionNameMaker>MorrowRim_NamerFactionKhajiitTribe</factionNameMaker>
 		<settlementNameMaker>MorrowRim_NamerSettlementKhajiitTribe</settlementNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/Khajiit</factionIconPath>
 		<pawnSingular>khajiit</pawnSingular>
 		<pawnsPlural>khajiit</pawnsPlural>
+		<melaninRange>0.25~1</melaninRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<MorrowRim_KhajiitCathayXenotype>300</MorrowRim_KhajiitCathayXenotype>
-				<MorrowRim_KhajiitDagiXenotype>100</MorrowRim_KhajiitDagiXenotype>
-				<MorrowRim_KhajiitOhmesXenotype>100</MorrowRim_KhajiitOhmesXenotype>
-				<MorrowRim_KhajiitPahmarXenotype>100</MorrowRim_KhajiitPahmarXenotype>
-				<MorrowRim_KhajiitSuthayXenotype>200</MorrowRim_KhajiitSuthayXenotype>
-				<MorrowRim_KhajiitTojayXenotype>100</MorrowRim_KhajiitTojayXenotype>
+				<MorrowRim_KhajiitCathayXenotype>3</MorrowRim_KhajiitCathayXenotype>
+				<MorrowRim_KhajiitOhmesXenotype>2</MorrowRim_KhajiitOhmesXenotype>
+				<MorrowRim_KhajiitSuthayXenotype>2</MorrowRim_KhajiitSuthayXenotype>
+				<MorrowRim_KhajiitDagiXenotype>1</MorrowRim_KhajiitDagiXenotype>
+				<MorrowRim_KhajiitPahmarXenotype>1</MorrowRim_KhajiitPahmarXenotype>
+				<MorrowRim_KhajiitTojayXenotype>1</MorrowRim_KhajiitTojayXenotype>
 			</xenotypeChances>
 			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
+		<requiredMemes>
+			<li>Structure_OriginHindu</li>
+			<li>HighLife</li>
+			<li>VME_Astrology</li>
+			<li>VME_Trader</li>
+			<li>VME_Nomad</li>
+		</requiredMemes>
+		<allowedCultures><li>Rustican</li></allowedCultures>
+		<techLevel>Neolithic</techLevel>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1</configurationListOrderPriority>
+		<startingCountAtWorldCreation>5</startingCountAtWorldCreation>
+		<allowedArrivalTemperatureRange>45~100</allowedArrivalTemperatureRange>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 	</FactionDef>
+
 </Defs>

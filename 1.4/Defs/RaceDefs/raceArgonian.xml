@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+		<defName>raceArgonian</defName>
+		<label>Argonian</label>
+		<description>Argonians (Saxhleel, or People of the Root in their native language of Jel) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. The other races often refer to them as lizards or the Lizard Folk instead, especially when meaning to be derogatory. They are known as the foremost experts in guerrilla warfare throughout Tamriel, a reputation brought upon them by defending their borders from enemies for countless centuries. They have a connection to the Hist, a race of sentient trees./n/Agile and cunning, they possess natural immunity to poison and disease, a trait that serves them well in their treacherous homeland. Argonians are swift swimmers and can breathe underwater. They are also naturally adept spellcasters and excel in the art of stealth./n/Foreign racial categorization labels them as "beasts", or "Betmeri", as opposed to the humanoid races of Mer and Men. The Argonians' alien nature is often commented on; they are called strange, expressionless, reserved peoples, slow to trust and hard to know. This is a sentiment shared even by lukiul, or "assimilated" Argonians, who were raised far away from the Hist and often have significant trouble fully understanding the emotions, body language, or motivations of their estranged brethren./n/While most of Tamriel refers to them as the "Argonians", many Argonians prefer the term "Saxhleel" when referring to their kind "Argonian" is an Imperial term. Some Argonians opt to take on a more Cyrodiilicized name outside of Black Marsh. Taking on Imperial dress, name, and customs makes things easier for Argonians in Cyrodiil./n/According to the First Era Scholar Brendan the Persistent, "The Argonian people have, throughout Tamrielic history, been perhaps the most misunderstood, vilified, and reviled of all the sentient races. Yet, those who have taken the time to experience Argonian culture have gained a greater appreciation for this noble and beautiful people."</description>
+		
+		<alienRace>
+			<generalSettings>				
+				<allowHumanBios>true</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<getsGreyAt>60</getsGreyAt>
+				
+				<alienPartGenerator>
+					<colorChannels>
+					
+					  <li>
+						<name>skin</name>
+						<first Class="AlienRace.ColorGenerator_SkinColorMelanin">
+						  <minMelanin>0</minMelanin>
+						  <maxMelanin>1</maxMelanin>
+						</first>
+						<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+						  <colorChannel>green</colorChannel>
+						  <colorChannel>blue</colorChannel>
+						  <colorChannel>yellow</colorChannel>
+						  <colorChannel>orange</colorChannel>
+						  <colorChannel>purple</colorChannel>
+						</second>
+					  </li>
+					  
+					</colorChannels>
+				</alienPartGenerator>
+				
+				<alienbodytypes>
+				  <li>Male</li>
+				  <li>Thin</li>
+				  <li>Hulk</li>
+				</alienbodytypes>
+				
+			</generalSettings>
+			
+			
+			
+			<raceRestriction>
+				<xenotypeList>
+					<li>Saxthleel</li>
+					<li>Paatru</li>
+					<li>Naga</li>
+					<li>Naga</li>
+				</xenotypeList>
+				<reproductionList>
+					<li>raceArgonian</li>
+				</reproductionList>
+				<onlyReproduceWithRestrictedRaces>true</onlyReproduceWithRestrictedRaces>
+			</raceRestriction>
+			
+			
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient> 
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			
+			
+			<graphicPaths></graphicPaths>
+			<styleSettings></styleSettings>
+			<thoughtSettings></thoughtSettings>
+			<relationSettings></relationSettings>
+			
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

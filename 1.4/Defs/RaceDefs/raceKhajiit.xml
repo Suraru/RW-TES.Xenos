@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+		<defName>raceKhajiit</defName>
+		<label>Khajiit</label>
+		<description>Khajiit (from Ta'agra, meaning desert-dweller) are cat-like people who come from Elsweyr, known for high intelligence and agility. These traits make them very good thieves and acrobats, but Khajiit are also fearsome warriors. They are rarely known to be mages. Khajiit mostly stay on land, but piracy and Skooma trade does draw some to work as sailors./n/Khajiit anatomy differs greatly from both men and mer, not only because of their fur, tail, and sometimes toe-walking stance, but also their digestive system and metabolism. Khajiit, Argonians, and Imga are the so-called "beast races" of Tamriel because of these large differences. Khajiit have a lifespan similar to that of humans. There are no well-documented cases of cross-breeding between Khajiit and other races, though there are rumors of such a thing. The foreign appearance and behavior of Khajiit make them common targets of racial discrimination, being given the name Cat-Men by foreigners, which the Khajiit don't take lightly.</description>
+		
+		<alienRace>
+			<generalSettings>
+				<chemicalSettings>
+				  <li>
+					<chemical>Smokeleaf</chemical>
+					<reactions>
+					  <li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>SmokeleafTolerance</hediffDef>
+						<severity>0.25</severity>
+					  </li>
+					</reactions>
+				  </li>
+				  <li>
+					<chemical>Psychite</chemical>
+					<reactions>
+					  <li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>PsychiteTolerance</hediffDef>
+						<severity>0.25</severity>
+					  </li>
+					</reactions>
+				  </li>
+				</chemicalSettings>
+				
+				<allowHumanBios>true</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<getsGreyAt>60</getsGreyAt>
+
+			</generalSettings>
+			
+			
+			
+			<raceRestriction>
+				<xenotypeList>
+					<li>Cathay</li>
+					<li>Suthay</li>
+					<li>Pahmar</li>
+					<li>Ohmes</li>
+					<li>Dagi</li>
+					<li>Tojay</li>
+				</xenotypeList>
+				<reproductionList>
+					<li>raceKhajiit</li>
+				</reproductionList>
+				<onlyReproduceWithRestrictedRaces>true</onlyReproduceWithRestrictedRaces>
+			</raceRestriction>
+			
+			
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient> 
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			
+			
+			<graphicPaths></graphicPaths>
+			<styleSettings></styleSettings>
+			<thoughtSettings></thoughtSettings>
+			<relationSettings></relationSettings>
+			
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

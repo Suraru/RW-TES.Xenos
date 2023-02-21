@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+		<defName>raceMer</defName>
+		<label>Mer</label>
+		<description>Mer (/mɛr/, meaning folk), or elves, refers to any of the Elder Races of Mundus, such as the Dunmer (formerly the Chimer), Orsimer, Altmer, and Bosmer. Besides these four races, the Falmer and Maormer are also said to be mer. While the Bretons are the result of interbreeding between Aldmer and Nedes, they are most commonly considered men, and not mer. A chief distinguishing characteristic of Mer is their lengthy lifespans, with average citizens living over two centuries before being considered old—two or three times the span of Men./n/Children are few among most Mer. The average elven woman can conceive twice, but no more than four (and even that is considered rare). That rule does not apply to Bosmer, who are known for their numerous offspring. There are several known Dunmer families with over six children. Those extraordinarily gifted in magic or alchemy, or favored by the Gods, can endure for millennia with seemingly no ill effects. A few mer races have disappeared or otherwise died out, including the Dwemer and the Ayleids. All of these races are thought to be descended from the Aldmer. The Maormer either have a different origin entirely or diverged from their brethren before the Aldmer inhabited Summerset Isle. Elves consider themselves the only "truly human race", as they are descended directly from the gods. Some elves regard Manish and Beast races as nothing more than intelligent animals.</description>
+		
+		<alienRace>
+			<generalSettings>		
+				<allowHumanBios>true</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<getsGreyAt>200</getsGreyAt>
+				<immuneToAge>true</immuneToAge>
+				
+				<alienPartGenerator>
+					<colorChannels>
+					
+					  <li>
+						<name>skin</name>
+						<first Class="AlienRace.ColorGenerator_SkinColorMelanin">
+						  <minMelanin>0</minMelanin>
+						  <maxMelanin>0</maxMelanin>
+						</first>
+						<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+						  <colorChannel>yellow</colorChannel>
+						</second>
+					  </li>
+					  
+					  <li>
+						<name>hair</name>
+						<first Class="ColorGenerator_Options">
+						  <options>
+							<li>
+							  <weight>10</weight>
+							  <only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+							</li>
+							<li>
+							  <weight>10</weight>
+							  <only>RGBA(0, 128, 255, 255)</only>
+							</li>
+							<li>
+							  <weight>10</weight>
+							  <only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+							</li>
+						  </options>
+						</first>
+						<second Class="ColorGenerator_Single">
+						  <color>RGBA(128, 255, 0, 255)</color>
+						</second>
+					  </li>
+					  
+					</colorChannels>
+				</alienPartGenerator>
+				
+				<alienbodytypes>
+				  <li>Thin</li>
+				</alienbodytypes>
+				
+				<reproduction>
+					<femaleFertilityAgeFactor>
+					  <points>
+						<li>(14, 0)</li>
+						<li>(20, 0.5)</li>
+						<li>(100, 0.25)</li>
+						<li>(200, 0.1)</li>
+						<li>(225, 0.02)</li>
+						<li>(250, 0)</li>
+					  </points>
+					</femaleFertilityAgeFactor>				
+				</reproduction>
+				
+			</generalSettings>
+			
+			
+			
+			<raceRestriction>
+				<xenotypeList>
+					<li>Altmer</li>
+					<li>Bosmer</li>
+					<li>Dunmer</li>
+					<li>Orsimer</li>
+				</xenotypeList>
+			</raceRestriction>
+			
+			
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient> 
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			
+			
+			<graphicPaths></graphicPaths>
+			<styleSettings></styleSettings>
+			<thoughtSettings></thoughtSettings>
+			<relationSettings></relationSettings>
+			
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

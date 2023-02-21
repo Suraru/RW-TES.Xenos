@@ -7,14 +7,21 @@
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>Adds in the 10 main races as xenotypes (Imperial, Breton, Redguard, Nord, Altmer, Dunmer, Bosmer, Orsimer, Argonian, and Khajiit) as well as 6 khajjit subtypes (Cathay, Suthay, Tojay, Dagi, Ohmes, Pahmar) as well as some basic factions.
+	<description>Adds in the 10 main races as xenotypes (Imperial (Colovian and Nibenese), Breton, Redguard, Nord, Altmer, Dunmer, Bosmer, Orsimer, Argonian, and Khajiit) as well as 6 khajjit subtypes (Cathay, Suthay, Tojay, Dagi, Ohmes, Pahmar) as well as some basic factions.
 
 Requires:
-	Vaniila Expanded Framework
-	Vanilla Factions Expanded: Vikings and Medieval (I got lazy and used them as a base)
-	Biotech Expansion: Core, Mammalia, and Mythic (for khajiit and argonians)
+	-Harmony
+	-Vaniila Expanded Framework
+	-Vanilla Ideology Expanded: Memes & Structures
+	-Humanoid Alien Races
+	-[insert gene mods here before you upload, suraru, you dummy]
 	
-Should be compatible with Morrowrim. I might tweak this mod some more, but I don't plan on putting too much work into it, as morrowrim's races will be superior once released. 
+Also has optional compatibility with:
+	-Morrowrim
+	-Rim of Madness - Bones
+(I also highly recommend these mods)
+
+Additional thanks to https://www.deviantart.com/okiir for their flags I used as a base to create my icons.
 	</description>
 	<modDependencies>
 		<li>
@@ -28,38 +35,23 @@ Should be compatible with Morrowrim. I might tweak this mod some more, but I don
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.medievalmodule</packageId>
-			<displayName>Vanilla Factions Expanded - Medieval</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023513450</steamWorkshopUrl>
+			<packageId>vanillaexpanded.vmemese</packageId>
+			<displayName>Vanilla Ideology Expanded: Memes & Structures</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 		<li>
-			<packageId>OskarPotocki.vfe.vikings</packageId>
-			<displayName>Vanilla Factions Expanded - Vikings</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2231295285</steamWorkshopUrl>
-		</li>
-		<li>
-			<packageId>biotexpans.core</packageId>
-			<displayName>Biotech Expansion - Core</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2884018485</steamWorkshopUrl>
-		</li>
-		<li>
-			<packageId>biotexpans.mythic</packageId>
-			<displayName>Biotech Expansion - Mythic</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2883216840</steamWorkshopUrl>
-		</li>
-		<li>
-			<packageId>biotexpans.mammalia</packageId>
-			<displayName>Biotech Expansion - Mammalia</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2878084431</steamWorkshopUrl>
+			<packageId>erdelf.humanoidalienraces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.medievalmodule</li>
-		<li>OskarPotocki.vfe.vikings</li>
-		<li>biotexpans.core</li>
-		<li>biotexpans.mythic</li>
-		<li>biotexpans.mammalia</li>
+		<li>vanillaexpanded.vmemese</li>
+		<li>erdelf.humanoidalienraces</li>
+		<li>sirmashedpotato.morrowrim</li>
+		<li>sihv.rombones</li>
 	</loadAfter>
 </ModMetaData>
